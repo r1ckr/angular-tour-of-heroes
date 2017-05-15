@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    // This is the callback function for when the Promise returns the value
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
 }
