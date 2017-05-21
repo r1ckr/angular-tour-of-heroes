@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Hero } from '../hero.model';
 import { HeroService } from '../hero.service';
 
@@ -8,7 +10,10 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  constructor(private heroService: HeroService) {}
+  constructor(
+    private heroService: HeroService,
+    private router: Router
+    ) {}
   
   heroes: Hero[];
   selectedHero : Hero;
@@ -24,5 +29,9 @@ export class HeroesComponent implements OnInit {
   getHeroes(): void {
     // This is the callback function for when the Promise returns the value
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+  }
+
+  gotoDetail(): void {
+    this.router.navigate(['/detail', this.selectedHero.id]);
   }
 }
