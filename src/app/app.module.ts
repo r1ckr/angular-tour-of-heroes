@@ -6,8 +6,8 @@ import { RouterModule } from '@angular/router'
 
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroesComponent } from './heroes.component';
-import { DashboardComponent } from './dashboard.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroService } from './hero.service';
 
 @NgModule({
