@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
 ## Tutorial
-https://angular.io/docs/ts/latest/tutorial/toh-pt2.html
+https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
 
 ## Development server
 
