@@ -14,6 +14,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroService } from './hero.service';
 import { AppRoutingModule }     from './app-routing.module';
+import { HeroSearchComponent } from './hero-search/hero-search.component'
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { AppRoutingModule }     from './app-routing.module';
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   // These are like beans that are injected into every component, so we don't need to declare providers in our components
   providers: [HeroService], 
